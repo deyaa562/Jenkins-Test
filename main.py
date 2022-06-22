@@ -2,7 +2,7 @@ from logging import Logger
 import sys
 
 
-logger = Logger()
+logger = Logger('logger')
 test = 'Test'
 
 if __name__ == '__main__':
