@@ -2,9 +2,10 @@ from logging import Logger
 import sys
 
 
-logger = Logger()
+logger = Logger('logger')
 test = 'Test'
 
 if __name__ == '__main__':
     logger.info(test)
-    logger.info(sys[0])
+    logger.info(f'logger: {sys.argv[1]}')
+    print(sys.argv[1])
